@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content=" width = device-width, initial-scale = 1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel= "stylesheet" type = "text/css" href= "../Style/style.css" media = "all">
+        <title> GAME OF TRIVIA </title>
+    </head>
+
+    <body>
+        <main class = " intro-main">
+            <header class = "index-header">
+                <nav class = "landing-nav">
+                    <a class ="linkOut" href="#coder-intro"><img src= "../Images/profile.png" alt = "About Us Icon">A Propos de Nous</a>
+                </nav>
+    
+                <nav class = "user-id-nav" style="display: none;">
+                    <!-- Reaffiche l'introduction de la page landing -->
+                    <a class = "return-btn return-btn-user" href = "#landing"><img src="../Images/return.png" alt="Return Button"></a>
+                    <article>
+                        <!-- Affiche la liste de champions -->
+                        <a class = "userLeaderBtn" href="#leaderboard"><img src="../Images/trophy.png" alt="Leaderboard Icon">Liste-de-Champions</a>
+                        <a class = "userContactBtn" href="#coder-intro"><img src="../Images/profile.png" alt="Leaderboard Icon">A Propos de Nous</a>
+                    </article>
+                </nav>
+
+                <nav class = "select-lang-nav user-id-nav" style="display: none;">
+                    <!-- Reaffiche la page d'identification de la page landing -->
+                    <a class = "return-btn return-btn-lang" href = "#login"><img src="../Images/return.png" alt="Return Button"></a>
+                    <article>
+                        <!-- Affiche la liste de champions dans la section leaderboard -->
+                        <a class = "langLeaderBtn" href= "#leaderboard"><img src="../Images/trophy.png" alt="Leaderboard Icon">Liste-de-Champions</a>
+                        <a class = "langContactBtn" href= "#coder-intro"><img src="../Images/profile.png" alt="Leaderboard Icon">A Propos de Nous</a>
+                    </article>
+                </nav>
+
+                <nav class = "game-header-nav" style = "display: none;">
+                    <!-- Redirige l'Utilisateur vers la selection de langue -->
+                    <a class = "return-btn return-btn-game" href = "#lang-select"><img src="../Images/return.png" alt="Return Button"></a>
+                    <article class = "sub-return">
+                        <a class = "htpBtnGame" href="#about-game"><img src="../Images/confused.png" alt="How-to-play Icon">Comment Jouer?</a>
+                        <a class = "reportBtnGame" href="#bug-wrapper"><img src="../Images/ladybug.png" alt="Bug Icon">Signaler un bug!</a>
+                    </article>
+                </nav>
+
+                <nav class = "how-to-play-nav" style="display: none;">
+                    <!-- Reaffiche la section du jeux -->
+                    <a href = "#game" class = "return-btn return-btn-htp"><img src="../Images/return.png" alt="Return Button"></a>
+                </nav>
+
+
+                <nav class = "leaderboard-nav" style="display: none;">
+                    <!-- Reaffiche le contenu de la section game-wrapper  -->
+                    <a href = "#game" class ="return-btn"><img src= "../Images/return.png" alt="Return Button"></a>
+                    <article class ="linkOut-wrapper">
+                        <a class ="linkOut linkOut1" href="#coder-intro"><img src= "../Images/profile.png" alt = "About Us Icon">A propos de nous</a>
+                        <a class ="linkOut linkOut2 songslistOutBtn" href="#songs-list"><img src= "../Images/addSong.png" alt = "About Us Icon">Ajouter une Nouvelle Chanson</a>
+                    </article>
+                </nav>
+
+                <nav class = "artist-lyrics-nav" style="display: none;">
+                    <!-- Redirige l'Utilisateur vers la section login  -->
+                    <a class = "return-btn return-addSong" href="#login"><img src="../Images/return.png" alt="Return Button"></a>
+                    <a class = "signal-wrapper" href="#bug-wrapper"><img src="../Images/ladybug.png" alt="Bug Icon" srcset="">Signaler un bug!</a>
+                </nav>
+
+                <nav class = "coder-intro-nav" style="display: none;">
+                    <!-- Redirige l'Utilisateur vers la section login -->
+                    <a class = "return-btn" href = "#login"><img src="../Images/return.png" alt="Return Button"></a>
+                </nav>
+    
+                <nav class = "coder-info-nav" style = "display: none" >
+                    <!-- Reaffiche les infos d'introduction des codeurs-->
+                    <a class = "return-btn" href = "#coder-intro"><img src="../Images/return.png" alt="Return Button"></a>
+                </nav>
+
+                <nav class = "reports-nav" style="display: none;">
+                    <!-- Redirige l'Utilisateur vers la page precedente, la section game-->
+                    <a href="#coder-intro"><img src="../Images/return.png" alt="Return Button"></a>
+                </nav>
+
+            </header>
+    
+            <section id ="landing" class = "global-wrapper intro-wrapper">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+                <article class ="about-game-wrapper">
+                    <h1>GAME OF TRIVIA</h1>
+    
+                    <!-- Description du jeux -->
+                    <h2>Decouvrez Le Monde Fascinant Des Jeux Des Trivia</h2>
+                    <p>
+                        Bienvenue dans l'univers captivant des jeux de trivia, où la connaissance et la rapidité d'esprit règnent en maîtres. Les jeux de trivia sont une forme de divertissement intellectuel où les joueurs sont mis au défi de répondre à des questions de culture générale couvrant divers domaines tels que l'histoire, la science, la culture pop, et bien plus encore.
+                    </p>
+                    
+                    <p>
+                        <i>Le principe est simple </i>: les joueurs ou les équipes reçoivent une série de questions et doivent y répondre correctement pour gagner des points. Ces jeux peuvent se jouer individuellement ou en groupe, ce qui en fait une activité sociale par excellence. Ils stimulent l'esprit, favorisent l'apprentissage et offrent une formidable opportunité de tester ses connaissances tout en s'amusant.
+                    </p>
+                    
+                    <p>
+                        Les jeux de trivia ont connu une grande popularité grâce à des émissions de télévision telles que <strong>« Qui veut gagner des millions ? »</strong> ou <strong>« Jeopardy ! »</strong>, où les candidats concourent pour des prix en répondant à une série de questions de plus en plus difficiles. Ces jeux télévisés ont contribué à faire des trivia une forme de divertissement appréciée mondialement.
+                    </p> 
+    
+                    <p>
+                        Dans notre jeu de trivia, nous reprenons cette tradition captivante et l'adaptons au format numérique. Chaque question est conçue pour défier vos connaissances et votre rapidité, tout en vous offrant une expérience ludique et éducative. Que vous soyez un passionné d'histoire, un expert en science, ou simplement quelqu'un qui aime apprendre de nouvelles choses, notre jeu saura satisfaire votre curiosité et mettre à l'épreuve votre intellect.
+                    </p>
+    
+                    <p>
+                        Préparez-vous à embarquer dans une aventure trépidante à travers le monde des connaissances, où chaque question est une opportunité de briller et d'apprendre. Rejoignez-nous et mesurez-vous à d'autres esprits curieux dans ce voyage passionnant au cœur de la culture générale !
+                    </p>
+    
+                    <!-- Comment jouer le jeux et ses regles -->
+                    <h2>Comment Jouer A Game-Of-Trivia ?</h2>
+    
+                    <h3>Bienvenue dans GAME OF TRIVIA, le jeu de questions-réponses qui mettra à l'épreuve vos connaissances et votre rapidité! Voici comment jouer :</h3>
+                    <article class ="how-to-play-wrapper">
+                        <h2>LES REGLES</h2>
+                        <!-- comment jouer le jeux et ses regles -->
+    
+                        <ol>
+                            <li>
+                                <h4>Commencer le Jeu :</h4>
+                                <p>Cliquez sur le bouton <strong>'Commencer'</strong> pour lancer une nouvelle partie.</p>
+                                <p>Les chansons sont dans deux caatégories: soit en <strong>Anglais</strong> soit en <strong>Français</strong></p>
+                            </li>
+        
+                            <li>
+                                <h4>Lecture des Questions :</h4>
+                                <ul>
+                                    <li>À chaque tour, une question apparaîtra à l'écran dans 'game-board'.</li>
+                                    <li>Lisez attentivement la question affichée.</li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <h4>Choix des Réponses :</h4>
+                                <ul>
+                                    <li>Quatre réponses possibles seront présentées sous la question.</li>
+                                    <li>Sélectionnez la réponse que vous pensez être correcte en cliquant dessus.</li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <h4>Indice :</h4>
+                                <p>Si vous avez besoin d'aide, cliquez sur <strong>'Donnez moi une indice'</strong> pour obtenir un indice qui peut vous guider vers la bonne réponse.</p>
+                            </li>
+        
+                            <li>
+                                <h4>Réponse et Points :</h4>
+                                <ul>
+                                    <li>Après avoir sélectionné une réponse, vous saurez immédiatement si vous avez choisi la bonne réponse.</li>
+                                    <li>Des points seront attribués pour chaque bonne réponse et ajoutés à votre score total, visible dans <strong>'Scoreboard'</strong>.</li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <h4>Fin du Jeu :</h4>
+                                <ul>
+                                    <li>Le jeu se termine après un nombre défini de questions, ou peut continuer jusqu'à ce que vous choisissiez d'arrêter.</li>
+                                    <li>Essayez de battre votre meilleur score ou de vous comparer aux autres sur le leaderboard!</li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <h4>N'oubliez pas :</h4>
+                                <ul>
+                                    <li>Chaque question a une limite de temps, alors réfléchissez vite!</li>
+                                    <li>Votre score dépend de la rapidité et de la précision de vos réponses.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </article>
+                    <h4><i>Amusez-vous bien et mettez vos connaissances à l'épreuve avec GAME OF TRIVIA!</i></h4>
+    
+                </article>
+    
+        
+                <!-- Affiche la section user-id pour permettre un login -->
+                <a id = "start-btn" class = "start-btn-wrapper" href="#login">Commencer</a>
+            </section>
+
+    
+            <section id = "login" class = "global-wrapper user-id-global-wrapper" style="display: none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+
+                <form class = "input-wrapper" action="login">
+                    <h1>S'identifier: </h1>  
+                    <article>
+                        <label class ="label label-id-ecole" for="">Saisissez Votre Identifiant</label>
+                        <input type="text" class = "input id-ecole" placeholder=" Numero étudiant UT2J">
+                    </article>
+
+                    <article>
+                        <label class ="label label-id-joueur" for="">Saisissez Votre Nom d'Utilisateur: </label>
+                        <input type="text" class = "input id-joueur" placeholder=" Doit comporter des chiffres.">
+                    </article>
+                        
+                </form>
+                
+                <!-- Doit ouvrir la section jeux -->
+                <a class = "play-btn btn" href = "#lang-select">JOUER</a>
+            </section>
+
+            <section id= "lang-select" class="global-wrapper start-btn-lang-wrapper" style="display: none;">
+                    
+                    <a class = "start-btn-wrapper select-french" href="#game"> <img src="../Images/french.png" alt=" French Icon">Français</a>
+                    
+                    <a class = "start-btn-wrapper select-eng" href="#game"> <img src="../Images/english.png" alt="English Icon">Anglais</a>
+                
+            </section>
+
+            <section id = "game" class="global-wrapper game-wrapper" style="display: none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+
+                <aside class ="scoreboard-wrapper">
+                    <article class="scoreboard-title-wrapper">
+                        <img class ="scoreboard-img" src="../Images/score.png" alt ="Points logo">
+                        <h2>Scoreboard</h2>
+                        <img class ="scoreboard-img" src="../Images/score.png" alt ="Points logo">
+                    </article>
+                    
+                    <article class = "scoreboard-text-wrapper">
+                        <h3 class = "scoreboard-user-id"><strong>Nom d'Utilisateur: </strong></h3> 
+                        <h3 class = "scoreboard-points">Points</h3>
+                    </article>
+                </aside>
+
+                <section class="under-aside">
+                    <article class = "game-board">
+                        <p class = "game-board-question"> Qui est l'<i>Auteur</i> de cette chanson dont les paroles sont:</p>
+                        <p class = "main-artist-question"> <i>"Soso take my pain away"</i></p>
+                    </article>
+    
+                    <button class = "hint-btn" type="button"><img src="../Images/hint.png" alt="" srcset="">Indice</button>
+                    <article class = "hint-wrapper" style="display: none;">
+                        <!-- Vraie Indice : Les autres auteurs de la Chanson | est Display: none avant qu'on ne clique sur le bouton d'indice -->
+                        <p class = "hint-from-db" >L'auteur a collaboré avec <span>Kanye West, Meek Mill et A$ap Rocky</span></p>
+                    </article>
+    
+                    <article class="all-ans-wrapper col justify-content-evenly" >
+                        
+                            <section class ="row set1 set">
+                                <button type="button" class = "response-btn btn ans-wrapper btn-light mb-4 me-3">
+                                    <article style = "display : none;"> <!--Display est none avant que les repsonses soient choisies-->
+                                        <img class = "right" src = "../Images/checked.png">
+                                        <img class = "wrong" src = "../Images/wrong.png" >
+                                    </article>
+                                        
+                                    <h3 class ="ans-text"><span>A: </span>Naira Marley</h3>
+                                </button>
+        
+                                <button type="button" class = "response-btn btn ans-wrapper btn-light mb-4">
+                                    <article style = "display : none;"> <!--Display est none avant que les repsonses soient choisies-->
+                                        <img class = "right" src = "../Images/checked.png">
+                                        <img class = "wrong" src = "../Images/wrong.png">
+                                    </article>
+                                    <h3 class ="ans-text"><span>B: </span>Davido</h3>
+                                </button>        
+                            </section>
+                            
+                            <section class = "row set2 set">
+                                <button type="button" class = "response-btn btn ans-wrapper3 btn-light me-3">
+                                    <article style = "display : none;"> <!--Display est none avant que les repsonses soient choisies-->
+                                        <img class = "right" src = "../Images/checked.png">
+                                        <img class = "wrong" src = "../Images/wrong.png">
+                                    </article>
+                                    <h3 class ="ans-text"><span>C: </span>Omah Lay</h3>
+                                </button>
+        
+                                <button type="button" class = "response-btn btn ans-wrapper btn-light">
+                                    <article style = "display : none;"> <!--Display est none avant que les repsonses soient choisies-->
+                                        <img class = "right" src = "../Images/checked.png">
+                                        <img class = "wrong" src = "../Images/wrong.png">
+                                    </article>
+                                    <h3 class = "ans-text"><span>D: </span>The African Giant</h3>
+                                </button>
+                            </section>
+                    </article>
+                    <button type = "button" class = "next-question response-btn btn">Suivant</button>
+                </section>
+                
+
+            
+                
+            </section>
+
+            <!-- À Propos du Jeu -->
+            <section id = "about-game" class ="about-game-wrapper global-wrapper" style="display: none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+
+                <article class ="how-to-play-wrapper">
+                    <h2>COMMENT JOUER</h2>
+                    <!-- comment jouer le jeux et ses regles -->
+
+                    <ol>
+                        <li>
+                            <h4>Commencer le Jeu :</h4>
+                            <p>Cliquez sur le bouton <strong>'Commencer'</strong> pour lancer une nouvelle partie.</p>
+                        </li>
+    
+                        <li>
+                            <h4>Lecture des Questions :</h4>
+                            <ul>
+                                <li>À chaque tour, une question apparaîtra à l'écran dans 'game-board'.</li>
+                                <li>Lisez attentivement la question affichée.</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <h4>Choix des Réponses :</h4>
+                            <ul>
+                                <li>Quatre réponses possibles seront présentées sous la question.</li>
+                                <li>Sélectionnez la réponse que vous pensez être correcte en cliquant dessus.</li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <h4>Indice :</h4>
+                            <ul>
+                                <li>Si vous avez besoin d'aide, cliquez sur <strong>'Donnez moi une indice'</strong> pour obtenir un indice qui peut vous guider vers la bonne réponse.</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <h4>Réponse et Points :</h4>
+                            <ul>
+                                <li>Après avoir sélectionné une réponse, vous saurez immédiatement si vous avez choisi la bonne réponse.</li>
+                                <li>Des points seront attribués pour chaque bonne réponse et ajoutés à votre score total, visible dans <strong>'Scoreboard'</strong>.</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <h4>Fin du Jeu :</h4>
+                            <ul>
+                                <li>Le jeu se termine après un nombre défini de questions, ou peut continuer jusqu'à ce que vous choisissiez d'arrêter.</li>
+                                <li>Essayez de battre votre meilleur score ou de vous comparer aux autres sur le leaderboard!</li>
+                            </ul>
+                        </li>
+    
+                        <li>
+                            <h4>N'oubliez pas :</h4>
+                            <ul>
+                                <li>Chaque question a une limite de temps, alors réfléchissez vite!</li>
+                                <li>Votre score dépend de la rapidité et de la précision de vos réponses.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </article>
+
+            </section>
+
+            <section id = "leaderboard" class = "leaderboard-wrapper global-wrapper" style="display: none;">
+                <img src="../Images/colouredTrophy.png" alt="Leaderboard Trophy">
+                 
+                <article class ="leaderboard-ranking">
+                    <!-- Noms d'Utilisateur de Joueurs et les points correspondant dans l'ordre descendant -->
+                    <ol>
+                        <h4 class="ranking-intro">LISTE DE CHAMPIONS :</h4>
+                        <article>
+                            <img src="../Images/english.png" alt="English Icon">
+                            <img class= "ampersand-logo" src="../Images/ampersand.png" alt="And Icon">
+                            <img class= "french-logo"src="../Images/french.png" alt="French Icon">
+                        </article>
+                        <li>
+                            <p class ="LB-user 1st-user">1. SirCamelotNo1</p> <p>:</p>
+                            <p class = "LB-score">23,000</p>
+                        </li>
+
+                        <li>
+                            <p class ="LB-user 2nd-user">2. LarryStephan78 </p> <p>:</p>
+                            <p class = "LB-score">2,000</p>
+                        </li>
+
+                        <li>
+                            <p class ="LB-user 3rd-user">3. UlrichMason98 </p> <p>:</p>
+                            <p class = "LB-score">1,990</p>
+                        </li>
+
+                        <li>
+                            <p class ="LB-user 4th-user">4. baldcap300 </p> <p>:</p>
+                            <p class = "LB-score">270</p>
+                        </li>
+                    </ol>
+
+                    <a href ="#lang-select" class = "restart-btn" style="display: none;"><img src="../Images/videogame.png" alt="Controller Icon">REJOUER</a>
+
+                </article>
+            </section>
+
+            <section id = "songs-list" class = "songs-global-wrapper global-wrapper" style= "display : none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+    
+                <!-- Section pour ajouter ou supprimer des chansons -->
+                    <form class ="songs-form form" action="Add / Delete Songs">
+                        <h1>Ajoutez une Chanson</h1>
+                        <label for="">Saisissez le nom de l'ARTISTE: </label>
+                        <input type="text" name="" class="input-add-artist input-add" placeholder ="  Nom de l'Artiste">
+    
+                        <label for="">Sasissez la CATEGORIE (ou la Langue) de la chanson : </label>
+                        <input type="text" name="" class="input-add-category input-add" placeholder = "  Categorie : Anglais/Français">
+            
+                        <label for="">Saisissez les PAROLES : </label>
+                        <input type="text" name="" class="input-add-lyrics input-add" placeholder = "  Paroles">
+            
+                        <!-- Ce bouton ajoute la chanson a la liste de chanson sur la page et aussi a notre Base de Donnee dans notre fichier database.js -->
+                        <article>
+                            <button type="submit" class ="btn btn-add-song">AJOUTER</button>
+                            <p class = "success-message" style="display: none;">👍</p>
+                        </article>
+                    </form>
+        
+                <!-- liste de chansons -->
+                <article class = "playlist-wrapper">
+                    
+                    <h2>Categorie : chansons en français </h2>
+                    <ul class = "french-songs songs">
+                        <li>
+                            <p class = "main-artist">Renaud</p>
+                            <p class = "other-artists">Jonny Halliday, Etienne Daho, Alain Souchon, Alain Bashung</p>
+                            <p class = "lyrics">« Te raconter la Terre »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Etienne Daho</p>
+                            <p class = "other-artists">Jonny Halliday, Etienne Daho, Alain Souchon, Alain Bashung</p>
+                            <p class = "lyrics">« Mais tout peut changer. Aujourd’hui est le dernier jour du reste de ta vie. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Alain Souchon</p>
+                            <p class = "other-artists">Jonny Halliday, Etienne Daho, Renaud, Alain Bashung</p>
+                            <p class = "lyrics">« on nous inflige des désirs qui nous affligent. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Alain Bashung</p>
+                            <p class = "other-artists">Alain Souchon, Jonny Halliday, Etienne Daho, Renaud</p>
+                            <p class = "lyrics">« J’ai crevé l’oreiller, j’ai du rêver trop fort. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Serge Gainsbourg</p>
+                            <p class = "other-artists">Alain Souchon, Jonny Halliday, Etienne Daho, Renaud</p>
+                            <p class = "lyrics">« Peut-on jamais savoir par où commence et quand finit l’indifférence. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Georges Brassens</p>
+                            <p class = "other-artists">Alain Souchon, Jonny Halliday, Etienne Daho, Renaud</p>
+                            <p class = "lyrics">« Je ne fais pourtant de tort à personne »</p>
+                        </li>
+                    </ul>
+        
+                    <h2>Categorie : chansons en anglais </h2>
+                    <ul class = "english-songs songs">
+                        <li>
+                            <p class = "main-artist">Bob Marley</p>
+                            <p class = "other-artists">the Beatles, John Lennon, Bob Dylan, The Jackson 5</p>
+                            <p class = "lyrics">« Get up, stand up, Stand up for your rights. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Bob Dylan</p>
+                            <p class = "other-artists">the Beatles, John Lennon, Bob Marley, The Jackson 5</p>
+                            <p class = "lyrics">« Don't criticize what you can't understand. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">John Lennon</p>
+                            <p class = "other-artists">Bob Dylan, The Jackson 5, Bob Marley, the Beatles</p>
+                            <p class = "lyrics">« Imagine there's no countries. »</p>
+                        </li>
+            
+                        <li>
+                            <p class = "main-artist">Bobby McFerrin</p>
+                            <p class = "other-artists">the Beatles, John Lennon, Bob Dylan, Bob Marley</p>
+                            <p class = "lyrics last">« In every life we have some trouble »</p>
+                        </li>
+                    </ul>
+        
+                </article>
+            </section>
+
+            <section id = "coder-intro" class = "global-wrapper coder-intro-global-wrapper coder-intro-wrapper" style ="display: none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+
+                <article class = "coder-wrapper">
+                    <h3>Ce projet a été realisé par: </h3>
+                    <h1 class ="coder1-name"><a href= "#coder1">Michael NYANYUIE</a></h1>
+                    <article class = "links-wrapper links-wrapper1">
+                        <article>
+                            <article class ="github-link-wrapper"><a class = "github-link" href ="https://github.com/bald-cap"><img class ="social" src="../Images/social.png" alt="Github Icon"></a></article>
+                            <a class ="linkedin-link" href ="https://www.linkedin.com/in/michael-kofi-nyanyuie-620252161">Linked<img class="social" src="../Images/linkedin.png" alt="linkedin Icon"></a>
+                            <img class ="mail-link social" src = "../Images/gmail.png" alt = "Gmail Icon">
+                        </article>
+                        
+                        <h2 class="actual-mail mail-coder1" style = "display: none;">mnyanyuie@gmail.com</h2>
+                    </article>
+                    
+
+                    <h1 class ="coder2-name"><a href= "#coder2">Babbel MBONIHANKUYE</a></h1>
+                    <article class = "links-wrapper links-wrapper2">
+                        <article>
+                            <a class= "insta-link" href ="https://www.instagram.com/lyrich9?igsh=MXNnNjhla3h0aHRtMQ%3D%3D&utm_source=qr"><img class ="social insta-img" src="../Images/instagram.png" alt="Instagram Icon"></a>
+                            <img class ="mail-link social" src = "../Images/gmail.png" alt = "Gmail Icon">
+                        </article>
+                        
+                        <h2 onclick="showEmail()" class="actual-mail mail-coder2" style = "display: none;">ulrichbab09@gmail.com</h2>
+                    </article>
+             
+                </article>
+    
+                <article class = "tools-wrapper">
+                    <h2>LES OUTILS EMPLOYES</h2>
+                    <ul>
+                        <li><img src="../Images/js.png" alt="JS Logo">JavaScript</li>
+                        <li><img src="../Images/html.png" alt="HTML Logo">HTML</li>
+                        <li><img src="../Images/css.png" alt="CSS Logo">CSS</li>
+                    </ul>
+                </article>
+
+                <a class= "contact-coder btn" href="#bug-wrapper"><img src="../Images/email.png" alt="Mail Us Icon">Contactez Nous</a>
+            </section>
+    
+            
+            <section id = "coder1" class = "global-wrapper coder-intro-global-wrapper" style = "display: none">
+                <article class = "portrait-wrapper">
+                    <img src="../Images/portrait1.jpg" alt="Coder Portrait">
+                </article>
+                    <h1 class = "coder-name">Michael NYANYUIE</h1>
+                
+    
+                <article class = "short-about-coder">
+                    <p class = "about-coder">
+                        <!-- Petite description du codeur -->
+                        Je suis un étudiant bilingue en deuxieme année en Informatique et Mathematiques Appliquées en Sciences Humaines Sociales (MIASHS), parcours Informatique SHS de Université Toulouse Jean Jaurès. Je specialise en backend. 
+                    </p>
+                </article>
+               
+                <article class = "long-about-coder">
+                    <!-- longue parcours du codeur -->
+                    <h1>PARCOURS EN INFORMATIQUE</h1>
+                    <p>
+                        Depuis mes études à l'Université du Ghana, mon intérêt pour l'informatique a constamment évolué. À l'origine, j'étais fasciné par les arts et les sciences humaines, mais une découverte fortuite de l'informatique a ouvert un nouveau monde de possibilités. Lors de mes vacances scolaires, j'ai consacré trois mois à étudier le matériel informatique chez <strong>Intercom Programming and Manufacturing Company (IPMC)</strong>, une expérience qui a renforcé mon désir de poursuivre dans ce domaine.
+                        
+                    </p>
+
+                    <p>
+                        Cependant, c'est ma rencontre avec un mentor, un développeur full-stack basé au Royaume-Uni, qui a véritablement orienté mon parcours. Sous sa guidance, je me suis lancé dans l'apprentissage autodidacte du développement web, me concentrant sur les langages fondamentaux que sont <strong>HTML, CSS et JavaScript</strong> . Les enseignements de <i>Shaun Pelling</i>, un développeur anglais reconnu, ont également joué un rôle clé dans mon éducation.
+                    </p>
+                        
+                    <p>
+                        Aujourd'hui, en tant qu'étudiant en deuxième année de <strong>MIASHS</strong> avec un parcours en <strong>Informatique SHS</strong>, j'ai élargi mon éventail de compétences pour inclure des langages de programmation tels que  <strong>Golang, Shell (et Shell Script), Python et SQL</strong>. Cette formation, alliée à ma passion pour la technologie, me prépare pour une carrière enrichissante en tant qu'ingénieur logiciel.
+                    </p>
+                        
+                    <p>
+                        À travers mon parcours, j'ai appris que les frontières géographiques ne limitent pas les possibilités dans le domaine de l'informatique. En explorant les opportunités en France, je me suis servi des ressources telles que le site d'orientation scolaire et professionnelle du canton de Vaud, me permettant de naviguer avec assurance dans le paysage de la programmation informatique en France.
+                    </p>                        
+                   
+                    <p>
+                        Mon cheminement en informatique est un voyage en constante évolution, un mélange passionnant de découverte personnelle et de développement professionnel. Je suis enthousiaste à l'idée de poursuivre cette aventure, en explorant de nouvelles technologies et en contribuant au monde dynamique de l'informatique.
+                    </p>
+                </article>
+            </section>
+    
+            <section id = "coder2" class = "global-wrapper coder-intro-global-wrapper" style = "display: none;" >
+                <article class = "portrait-wrapper">
+                    <img src="../Images/portrait2.jpg" alt="Coder Portrait">
+                </article>
+
+                    <h1 class = "coder-name">Babbel MBONIHANKUYE</h1>
+            
+                <article class = "long-about-coder">
+                    <!-- longue parcours du codeur -->
+                   <h1>PARCOURS EN INFORMATIQUE</h1>
+                   <p>
+                        Depuis l'obtention de mon bac en 2020, j'ai entrepris un parcours dans le domaine de l'informatique qui m'a conduit à venir en France en 2022. Voici comment je peux expliquer mon parcours :
+                    </p>
+
+                    <p>
+                        Après avoir décroché mon bac en 2020, j'ai ressenti une forte passion pour les domaines de l'informatique et des nouvelles technologies. Je me suis rendu compte que c'était un milieu en constante évolution et qui offrait de nombreuses opportunités professionnelles.
+                    </p>
+    
+                    <p>
+                        Dès lors, j'ai décidé de me former davantage dans ce domaine en commençant par suivre des cours en ligne et en m'initiant au développement de logiciels. J'ai également participé à des projets pratiques, tels que la création de sites web ou de petites applications mobiles.
+                    </p>
+                    
+                    <p>
+                        Convaincu de mon intérêt pour l'informatique et souhaitant approfondir mes compétences, j'ai choisi de poursuivre des études supérieures dans ce domaine. J'ai intégré une université dans mon pays d'origine où j'ai suivi un cursus en informatique, avec une spécialisation en développement logiciel.
+                    </p>
+                    
+                    <p>
+                        Au cours de mes études, j'ai été exposé à divers sujets, allant de la programmation aux réseaux informatiques.
+                    </p>
+
+                    <p>
+                        Cependant, conscient de l'importance d'élargir mes horizons et de bénéficier d'une expérience internationale, j'ai pris la décision de venir en France, reconnue pour son excellence en matière de formation en informatique.
+                    </p>
+
+                    <p>
+                        Mon arrivée en France prévue en 2022 a représenté ainsi une étape majeure dans mon parcours informatique. Je suis impatient de pouvoir bénéficier d'une immersion totale dans un environnement international et d'opportunités professionnelles passionnantes offertes par la France.
+                    </p>
+
+                    <p>
+                        En définitive, mon parcours dans le domaine de l'informatique depuis l'obtention de mon bac en 2020 jusqu'à mon arrivée en France en 2022 se caractérise par une passion grandissante, une formation continue, des stages professionnels enrichissants et une volonté constante de me dépasser dans ce secteur prometteur.
+                    </p>    
+                   
+                </article>
+            </section>
+
+            <form  id ="bug-wrapper" class = "bug-wrapper global-wrapper" action="Bug Report" style="display: none;">
+                <img class ="logo-img" src="../Images/logo.png" alt="GOT logo">
+
+                <h1>Signalez un bug | Contactez nous</h1>
+                <p>Par mail :</p>
+                <h2>professionalmail@gmail.com</h2>
+                    <!-- On envoie cela a l'address mail du gerant -->
+            </form>
+        </main>
+
+        <script src="../Func-DB/index.js"></script>
+    </body>
+</html>
